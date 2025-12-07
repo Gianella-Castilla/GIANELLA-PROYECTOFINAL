@@ -1,0 +1,16 @@
+---
+title: "Untitled"
+author: "GIANELLA CASTILLA ALZAMORA"
+format: html
+editor: visual
+---
+
+```{r}
+#CARGAR NUEVA DATA 
+data<- read_csv("C:/Users/nikol/Downloads/covid_19.csv")
+```
+
+```{r}
+#LIMPIAR DATA DE UNA COLUMNA FILAS CON NA
+data_limpia<-data[!is.na(data$severidad),] 
+```
