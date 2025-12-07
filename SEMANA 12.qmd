@@ -1,0 +1,45 @@
+---
+title: "Untitled"
+author: "GIANELLA CASTILLA"
+format: html
+editor: visual
+---
+
+```{r}
+#CALCULAR LA MEDIDA DE DISPERSION 
+
+#VARIANZA
+var(data$severidad,na.rm = TRUE)
+
+```
+
+```{r}
+#DESVIACION STANDART
+sd(data$severidad,na.rm = TRUE)
+```
+
+```{r}
+#RANGO
+range(data$severidad,na.rm = TRUE)
+```
+
+```{r}
+#RANGO INTERCUARTILICO
+IQR(data$severidad,na.rm = TRUE)
+```
+
+```{r}
+#MEDIDAS DE POSICION
+quantile(data$severidad,probs = c(0.25,0.50,0.75,0.90), na.rm = TRUE)
+```
+
+```{r}
+#RESUMEN
+summary(data)
+```
+
+```{r}
+#VER LAS 6 PRIMERAS FILAS
+head(data)
+
+```
