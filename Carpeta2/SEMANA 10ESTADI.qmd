@@ -1,0 +1,28 @@
+---
+title: "Untitled"
+author: "CASTILLA ALZAMORA GIANELLA"
+format: html
+editor: visual
+---
+
+```{r}
+#CARGAR DATA NUEVA 
+data<- read_csv("C:/Users/nikol/Downloads/covid_19.csv")
+```
+
+You can add options to executable code like this
+
+```{r}
+#CALCULAR MEDIA 
+mean(data$severidad)
+```
+
+```{r}
+#CALCULAR MEDIANA
+median(data$severidad)
+```
+
+```{r}
+#CALCULAR MODA
+mode_severidad<-names(sort(table(data$severidad),decreasing = TRUE))
+```
